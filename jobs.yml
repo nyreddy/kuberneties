@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: my-job
+spec:
+  template:
+    metadata:
+      name: my-job-pod
+    spec:
+      containers:
+      - name: my-container
+        image: my-image:latest
+        command: ["my-command"]
+      restartPolicy: OnFailure

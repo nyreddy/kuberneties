@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config
+data:
+  database_url: "" # give database endpoint here
+  api_key: "" # give api-key here
+  debug_mode: "true"

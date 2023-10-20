@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: apache-ingress
+spec:
+  rules:
+  - host: #give the domain name here
+   http:
+     paths:
+     - path: /
+       pathtype: Prefix
+       backend:
+       backend:
+         service:
+           name: apache-service
+           port:
+             number: 80
