@@ -10,7 +10,6 @@ spec:
      - path: /
        pathtype: Prefix
        backend:
-       backend:
          service:
            name: apache-service
            port:
